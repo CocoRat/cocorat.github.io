@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css demo</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         h1,
         h2 {
-            color: aqua;
+            color: teal;
+            outline-style: dotted;
         }
 
         #blue-text {
@@ -38,29 +40,71 @@
             margin: 10px auto;
             width: 50%;
         }
+
+        table {
+            width: 300px;
+        }
+
+        th,
+        td {
+            border-collapse: collapse;
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+            text-align: left;
+            padding: 15px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>today we will learn about adding style with css</h1>
-    <h2>this is how we add style with inline css</h2>
-    <p>this paragraph has no style</p>
-    <p style="color:seagreen;">this is a seagreen paragraph</p>
-    <p style="color:rgb(135,51,223); font-size:50px;">this is rgb(135,51,223) with font size 50px</p>
-    <p style="color:red; text-align: center; font-size: 20px; background-color: coral;">this is a red, font size 24px,
-        centered with coral bg</p>
 
-    <h2>this is how we add style with internal css, id selectors</h2>
-    <p id="blue-text">this text is blue</p>
-    <p id="red-text">this one is red</p>
-    <p id="multi-text">this one is green, 24px, and right aligned</p>
+    <div class="container">
+        <ul class="nav">
+            <li><a class="active-navpage" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h1>today we will learn about adding style with css</h1>
+        <h2>this is how we add style with inline css</h2>
+        <p>this paragraph has no style</p>
+        <p style="color:seagreen;">this is a seagreen paragraph</p>
+        <p style="color:rgb(135,51,223); font-size:50px;">this is rgb(135,51,223) with font size 50px</p>
+        <p style="color:red; text-align: center; font-size: 20px; background-color: coral;">this is a red, font size
+            24px,
+            centered with coral bg</p>
 
-    <h2>let's do this with class selectors</h2>
-    <p class="big-text">i want this one to be big</p>
-    <p class="big-text right-text">i want this one to be big and right aligned</p>
+        <h2>this is how we add style with internal css, id selectors</h2>
+        <p id="blue-text">this text is blue</p>
+        <p id="red-text">this one is red</p>
+        <p id="multi-text">this one is green, 24px, and right aligned</p>
 
-    <h2>centered image</h2>
-    <img src="images/imaginemegone.jpg" alt="cover of book titled imagine me gone" class="centered">
+        <h2>let's do this with class selectors</h2>
+        <p class="big-text">i want this one to be big</p>
+        <p class="big-text right-text">i want this one to be big and right aligned</p>
+
+        <h2>centered image</h2>
+        <img src="images/imaginemegone.jpg" alt="cover of book titled imagine me gone" class="centered">
+
+        <h2>table</h2>
+        <table>
+            <tr>
+                <th id="blue-text" style="width: 70px;">en</th>
+                <th id="red-text" style="width: 70px;">cn</th>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>一</td>
+            </tr>
+            <tr>
+                <td>two</td>
+                <td>二</td>
+            </tr>
+            <tr>
+                <td>three</td>
+                <td>三</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>

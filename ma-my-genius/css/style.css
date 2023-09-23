@@ -1,7 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 .header {
     padding: 20px;
-    background-color: white;
     text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, rgb(255, 75, 114), rgb(228, 21, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
 }
 
 
@@ -12,7 +21,7 @@
 }
 
 body {
-    background-color: rgb(236, 204, 213);
+    background-color: rgb(63, 197, 197);
 }
 
 .nav {
@@ -39,5 +48,13 @@ body {
 }
 
 .active-navpage {
-    background-color: rgb(63, 197, 197);
+    background-color: rgb(206, 26, 131);
+}
+
+.footer {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lia0lti.css">
+    <style>
+        .gallery-item {
+            margin: 5px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-caption {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99%;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="header">
+        <h1>My Genius</h1>
+        <p>An overview of Vocaloid</p>
+    </div>
+
+    <div>
+        <ul class="nav">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="resource.html">Resources</a></li>
+            <li><a class="active-navpage" href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="float: right;">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <!-- ChatGPT generated the following code from this prompt, "Act as a web developer. Create a html file for displaying images in a gallery format." (OpenAI's GPT-3.5 model). [Date Accessed: September 21, 2023]-->
+    <div class="container">
+        
+        <h2 style="text-align: center;">Image Gallery</h2>
+        <p>Here are some images to help you understand how Vocaloid is marketed, and to show you the real people behind the music.</p>
+
+        <div class="responsive">
+            <div class="gallery-item">
+                <img src="images/decp27.jpg" alt="Deco*27" width="600" height="400">
+                <div class="image-caption">Deco*27, a popular Vocaloid producer</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery-item">
+                <img src="images/miku-concert.JPG" alt="Miku Concert" width="600" height="400">
+                <div class="image-caption">A live Vocaloid concert</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery-item">
+                <img src="images/cryptonloids.png" alt="crypton future media vocaloids" width="600" height="400">
+                <div class="image-caption">Kagamine Rin + Len, MEIKO, Hatsune Miku, KAITO, and Megurine Luka; five well-recognized Vocaloids</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery-item">
+                <img src="images/wowaka.jpg" alt="Wowaka" width="600" height="400">
+                <div class="image-caption">Wowaka, a notable pioneer in Vocaloid who passed in 2019</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery-item">
+                <img src="images/Vocaloid5Main.jpg" alt="Vocaloid 5 interface" width="600" height="400">
+                <div class="image-caption">The Vocaloid 5 interface</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+   
+    <div class="footer">
+        <p>By Maya Park-Weber</p>
+    </div>
+
+</body>
+
+</html>

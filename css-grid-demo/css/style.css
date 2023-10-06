@@ -1,0 +1,96 @@
+/*this is my grid style for all pages*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-gap: 10px;
+
+}
+
+.grid-item {
+    background-color: rgb(222, 223, 201);
+    text-align: left;
+    font-size: 30px;
+    padding: 20px;
+}
+
+/*this goes on very top of grid*/
+.navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.main-image {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.main1 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.main2 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.support1 {
+    background-color: brown;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.support2 {
+    background-color: brown;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.sidenav {
+    background-color: brown;
+    grid-column: 3;
+    grid-row: 3 / span 3;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(95, 95, 100);
+    color: white;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nav li a:hover {
+    background-color: rgb(45, 45, 49);
+}
+
+.active-navpage {
+    background-color: rgb(52, 172, 104);
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    background-color: rgb(43, 167, 105);
+    color: white;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}

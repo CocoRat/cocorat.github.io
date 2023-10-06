@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .main1 {
+            background-color: rgb(65, 65, 68);
+            grid-column: 2 / span 2
+        }
+
+        .leftimage {
+            grid-column: 1;
+            grid-row: 3;
+            padding: 0px;
+
+        }
+
+        .sidenav {
+            background-color: rgb(65, 65, 68);
+            grid-row: 4 / span 2
+        }
+
+        .support1 {
+            background-color: rgb(142, 66, 212);
+        }
+
+        .support2 {
+            background-color: rgb(142, 66, 212);
+        }
+
+        h2,
+        h4 {
+            text-align: left;
+            color: rgb(222, 223, 201);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p,
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item navmenu">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active-navpage" href="about.html">About</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+        <div class="grid-item main-image">
+            <img src="images/time-mag-image.png" alt="image from time magazine">
+        </div>
+        <div class="grid-item main1">
+            <h2 style="color: rgb(52, 172, 104)">WELCOME TO EASTSIDE PREP</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id pretium augue. Curabitur lacus
+                magna, eleifend eu libero vitae, egestas hendrerit metus.</p>
+        </div>
+        <div class="grid-item leftimage">
+            <img src="images/left-image.png" alt="lithograph" style="width: 100%">
+        </div>
+        <div class="grid-item support1">
+            <h4>WHAT'S UP?</h4>
+            <p>Pellentesque sagittis felis non felis volutpat congue. Curabitur mollis finibus rhoncus. In hac habitasse
+                platea dictumst. Etiam in ullamcorper mauris. Nullam viverra arcu id dolor convallis, non tristique
+                sapien suscipit. Donec in luctus erat. Aenean vel scelerisque ligula. </p>
+        </div>
+        <div class="grid-item support2">
+            <h4>NICE TO MEET YOU!</h4>
+            <p>Mauris consectetur varius ligula, at pharetra urna scelerisque et. Praesent non neque commodo leo
+                imperdiet viverra. Sed malesuada imperdiet tortor, sit amet accumsan ex sollicitudin sit amet.</p>
+        </div>
+        <div class="grid-item main2">
+            <h4 style="color:rgb(75, 75, 75)">There's more...</h4>
+            <p>Nunc posuere eu sem id ultricies. Duis in enim sed mi ultricies aliquet. Donec blandit sem at ex mattis
+                aliquet. Aenean in vulputate metus, nec posuere dui.</p>
+        </div>
+        <div class="grid-item sidenav">
+            <h2 style="color:rgb(142, 66, 212)">LATEST</h2>
+            <ul style="list-style-type: none;">
+                <li>one 1</li>
+                <li>one 2</li>
+                <li>one 3</li>
+                <li>one 4</li>
+                <li>one 5</li>
+                <li>one 6</li>
+                <li>one 7</li>
+                <li>one 8</li>
+                <li>one 9</li>
+                <li>one 10</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">HELLO</div>
+</body>
+
+</html>

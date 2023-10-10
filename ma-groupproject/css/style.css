@@ -7,7 +7,7 @@
 }
 
 .grid-item {
-    background-color: rgb(222, 223, 201);
+    background-color: #fbfff1;
     text-align: left;
     font-size: 30px;
     padding: 20px;
@@ -47,8 +47,8 @@
 
 .footer {
     position: fixed;
-    background-color: #3d52d5;
-    color: white;
+    background-color: #b4c5e4;
+    color: #fbfff1;
     text-align: center;
     width: 100%;
     left: 0;

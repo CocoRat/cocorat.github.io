@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(59, 59, 59);
+    background-color: #3C3744;
 }
 
 .nav li a {
@@ -34,7 +34,7 @@
     text-decoration: none;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
+    color: #fbfff1;
 }
 
 .nav li a:hover {
@@ -42,12 +42,12 @@
 }
 
 .active-navpage {
-    background-color: rgb(206, 26, 131);
+    background-color: #3d52d5;
 }
 
 .footer {
     position: fixed;
-    background-color: rgb(43, 167, 105);
+    background-color: #3d52d5;
     color: white;
     text-align: center;
     width: 100%;

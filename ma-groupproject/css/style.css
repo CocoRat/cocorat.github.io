@@ -18,6 +18,14 @@
     grid-row: 1;
 }
 
+/*appearance*/
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/*nav menu style*/
 .nav {
     list-style-type: none;
     margin: 0;

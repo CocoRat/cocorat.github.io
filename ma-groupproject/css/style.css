@@ -63,6 +63,12 @@ h2 {
     font-style: normal;
 }
 
+p {
+    font-family: "basic-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 /*nav menu style*/
 .nav {
     list-style-type: none;

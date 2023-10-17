@@ -9,7 +9,7 @@
 }
 
 .grid-item {
-    background-color: #fbfff1;
+    background-color: #3d52d5;
     text-align: left;
     font-size: 30px;
     padding: 20px;
@@ -47,7 +47,8 @@
 
 /*appearance*/
 body {
-    background-color: #3d52d5;
+    background-color: #090c9b;
+    color: #fbfff1;
 }
 
 table,

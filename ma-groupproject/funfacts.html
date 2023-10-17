@@ -6,6 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun Facts</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lia0lti.css">
+    <style>
+        .intro {
+            grid-column: 1/ span 2;
+            grid-row: 2;
+        }
+
+        .textfacts {
+            grid-column: 1/ span 3;
+            grid-row: 3;
+        }
+
+        .skylineimg {
+            grid-column: 3/ span 1;
+            grid-row: 2;
+        }
+
+        table{
+            width: 100%; 
+            padding: 5px; 
+            border-collapse: separate;  /*NEW FEATURE*/
+            border-spacing: 5px; 
+        }
+
+        td,th{
+            padding: 15px; 
+        }
+
+        #biggertext{
+            font-size: 24px;
+        }
+
+    </style>
 </head>
 <body>
     <div class="grid-container">
@@ -19,11 +52,57 @@
                 <li><a href="outdoor.html">Outdoor activities</a></li>
                 <li><a class="active-navpage" href="funfacts.html">Fun facts</a></li>
         </div>
-        <div>
+
+        <div class="grid-item intro">
             <h1>Fun Facts!</h1>
-            <h2>Some fun facts about Seattle</h2>
+            <h2>Some interesting facts about Seattle.</h2>
         </div>
+
+        <div class="grid-item textfacts" id="biggertext">
+            <table style="width:100%">
+                <tr>
+                    <th>Fact</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Seattle is known as the Emerald City due to its lush green surroundings and abundant green spaces.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>The Space Needle, an iconic Seattle landmark, was built for the 1962 World's Fair and stands at 605 feet tall.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Seattle is home to Starbucks, the world-famous coffee chain, which opened its first store in Pike Place Market in 1971.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>The city experiences a lot of rain, but it doesn't rank as one of the rainiest cities in the United States. It's known for its drizzle rather than heavy rain.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Pike Place Market is one of the oldest continuously operated public farmers' markets in the U.S. and is famous for its fish-throwing fishmongers.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>The Museum of Pop Culture (MoPOP) in Seattle was designed by architect Frank Gehry and is a visually stunning building dedicated to popular culture.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Seattle is surrounded by stunning natural beauty, including the Puget Sound, the Olympic Mountains, and the Cascade Range.</td>
+                </tr>
+              </table>
+        </div>
+
+
+        <div class="grid-item skylineimg">
+            <img style="width: 95%;" src="images/skyline.avif" alt="">
+        </div>
+
     </div>
+
     <div class="footer">Emmy</div>
+    
 </body>
 </html>

@@ -9,18 +9,35 @@
     <link rel="stylesheet" href="https://use.typekit.net/lia0lti.css">
     <style>
         .intro {
-            grid-column: 1/ span 3;
+            grid-column: 1/ span 2;
             grid-row: 2;
         }
 
         .textfacts {
-            grid-column: 1/ span 1;
+            grid-column: 1/ span 3;
             grid-row: 3;
         }
 
         .skylineimg {
-            grid-column: 1/ span 3;
-            grid-row: 6;
+            grid-column: 3/ span 1;
+            grid-row: 2;
+        }
+
+        table{
+            width: 100%; 
+            padding: 5px; 
+            border-collapse: separate; 
+            border-spacing: 5px;
+
+        }
+
+        td,th{
+            padding: 15px; 
+        }
+
+
+        #biggertext{
+            font-size: 24px;
         }
     </style>
 </head>
@@ -42,7 +59,7 @@
             <h2>Some fun facts about Seattle</h2>
 
         </div>
-        <div class="grid-item textfacts"></div>
+        <div class="grid-item textfacts" id="biggertext">
             <table style="width:100%">
                 <tr>
                     <th>Fact</th>
@@ -78,6 +95,7 @@
                 </tr>
               </table>
         </div>
+
 
         <div class="grid-item skylineimg">
             <img style="width: 95%;" src="images/skyline.avif" alt="">

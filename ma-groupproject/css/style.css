@@ -1,4 +1,6 @@
 /*this is my grid style for all pages*/
+
+
 .grid-container {
     display: grid;
     grid-template-columns: 35% 35% 30%;
@@ -44,6 +46,10 @@
 }
 
 /*appearance*/
+body {
+    background-color: #3d52d5;
+}
+
 table,
 th,
 td {
@@ -77,8 +83,41 @@ h2 {
     color: #fbfff1;
 }
 
-.nav li a:hover {
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.drowndown .dropbtn {
+    border: none;
+    outline: none;
+    color: #3d52d5;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.nav li a:hover,
+.dropdown:hover .dropbtn {
     background-color: rgb(31, 31, 31);
+}
+
+.dropdown-content li a {
+    display: none;
+    position: absolute;
+    background-color: #b4c5e4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li a:hover {
+    background-color: antiquewhite;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .active-navpage {

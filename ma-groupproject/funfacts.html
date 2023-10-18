@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,22 +24,24 @@
             grid-row: 2;
         }
 
-        table{
+        table {
             border-color: white;
-            width: 100%; 
-            padding: 5px; 
-            border-collapse: separate;  /*NEW FEATURE*/
-            border-spacing: 5px; 
+            width: 100%;
+            padding: 5px;
+            border-collapse: separate;
+            /*NEW FEATURE*/
+            border-spacing: 5px;
             border: 2px solid;
         }
 
-        td,th{
+        td,
+        th {
             border-color: white;
             border: 2px solid;
-            padding: 15px; 
+            padding: 15px;
         }
 
-        #biggertext{
+        #biggertext {
             font-size: 24px;
         }
 
@@ -46,81 +49,102 @@
             grid-column: 1/ span 3;
             grid-row: 6;
         }
-
     </style>
 </head>
+
 <body>
     <div class="grid-container">
         <div class="grid-item navmenu">
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="indoor.html">Indoor activities</a></li>
-                <li><a href="food.html">Food</a></li>
-                <li><a href="shopping.html">Shopping</a></li>
-                <li><a href="placestosee.html">Places to see</a></li>
-                <li><a href="outdoor.html">Outdoor activities</a></li>
-                <li><a class="active-navpage" href="funfacts.html">Fun facts</a></li>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="food.html">Food</a>
+                <a href="shopping.html">Shopping</a>
+                <a href="placestosee.html">Places to see</a>
+                <a class="active-navpage" href="funfacts.html">Fun facts</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Activities
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="outdoor.html">Outdoor</a>
+                        <a href="indoor.html">Indoor</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="grid-item intro">
-            <h1>Fun Facts!</h1>
-            <h2>Some interesting facts about Seattle.</h2>
-        </div>
+    <div class="grid-item intro">
+        <h1>Fun Facts!</h1>
+        <h2>Some interesting facts about Seattle.</h2>
+    </div>
 
-        <div class="grid-item textfacts" id="biggertext">
-            <table style="width:100%">
-                <tr>
-                    <th>Fact</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Seattle is known as the Emerald City due to its lush green surroundings and abundant green spaces.</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>The Space Needle, an iconic Seattle landmark, was built for the 1962 World's Fair and stands at 605 feet tall.</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Seattle is home to Starbucks, the world-famous coffee chain, which opened its first store in Pike Place Market in 1971.</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>The city experiences a lot of rain, but it doesn't rank as one of the rainiest cities in the United States. It's known for its drizzle rather than heavy rain.</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Pike Place Market is one of the oldest continuously operated public farmers' markets in the U.S. and is famous for its fish-throwing fishmongers.</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>The Museum of Pop Culture (MoPOP) in Seattle was designed by architect Frank Gehry and is a visually stunning building dedicated to popular culture.</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Seattle is surrounded by stunning natural beauty, including the Puget Sound, the Olympic Mountains, and the Cascade Range.</td>
-                </tr>
-              </table>
-        </div>
+    <div class="grid-item textfacts" id="biggertext">
+        <table style="width:100%">
+            <tr>
+                <th>Fact</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Seattle is known as the Emerald City due to its lush green surroundings and abundant green spaces.
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>The Space Needle, an iconic Seattle landmark, was built for the 1962 World's Fair and stands at 605
+                    feet tall.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Seattle is home to Starbucks, the world-famous coffee chain, which opened its first store in Pike
+                    Place Market in 1971.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>The city experiences a lot of rain, but it doesn't rank as one of the rainiest cities in the United
+                    States. It's known for its drizzle rather than heavy rain.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pike Place Market is one of the oldest continuously operated public farmers' markets in the U.S. and
+                    is famous for its fish-throwing fishmongers.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>The Museum of Pop Culture (MoPOP) in Seattle was designed by architect Frank Gehry and is a visually
+                    stunning building dedicated to popular culture.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Seattle is surrounded by stunning natural beauty, including the Puget Sound, the Olympic Mountains,
+                    and the Cascade Range.</td>
+            </tr>
+        </table>
+    </div>
 
 
-        <div class="grid-item skylineimg">
-            <img style="width: 95%;" src="images/skyline.avif" alt="">
-        </div>
+    <div class="grid-item skylineimg">
+        <img style="width: 95%;" src="images/skyline.avif" alt="">
+    </div>
 
-        <div class="grid-item factvideo"> 
-            <p>Watch for more fun facts about Seattle</p>
-            <iframe style="width: 100%; height: 500px;" width="560" height="315" src="https://www.youtube.com/embed/f2YYHxCPitk?si=NiUzgOfl3YlhWHzN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+    <div class="grid-item factvideo">
+        <p>Watch for more fun facts about Seattle</p>
+        <iframe style="width: 100%; height: 500px;" width="560" height="315"
+            src="https://www.youtube.com/embed/f2YYHxCPitk?si=NiUzgOfl3YlhWHzN" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
 
     </div>
 
 
 
-    
+
 
     <div class="footer">Emmy</div>
-    
+
 </body>
+
 </html>

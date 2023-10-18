@@ -14,31 +14,6 @@
             height: auto;
         }
 
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: #008CBA;
-        }
-
-        .side-image-1:hover .overlay {
-            opacity: 1;
-        }
-
-        .text {
-            color: white;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
         .side-image-1 {
             grid-column: 3;
             grid-row: 3;
@@ -53,10 +28,25 @@
             grid-column: 3;
             grid-row: 5;
         }
+
+        .parralax {
+            background-image: url(images/Seattle_Center_as_night_falls.jpg);
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main-content {
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 5;
+        }
     </style>
 </head>
 
 <body>
+    <div class="parralax"></div>
     <div class="grid-container">
         <div class="grid-item navmenu">
             <div class="nav">
@@ -75,10 +65,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="grid-item main-image">
-            <img src="images/Seattle_Center_as_night_falls.jpg" alt="seattle center as night falls" class="image">
         </div>
 
         <div class="grid-item main-content">
@@ -100,11 +86,11 @@
         </div>
 
         <div class="grid-item side-image-2">
-            <a href="shopping.html"><img src="images/index_shopping.jpg" alt="food"></a>
+            <a href="shopping.html"><img src="images/index_shopping.jpg" alt="food" class="image"></a>
         </div>
 
         <div class="grid-item side-image-3">
-            <a href="placestosee.html"><img src="images/index_sightsee.jpeg" alt="food"></a>
+            <a href="placestosee.html"><img src="images/index_sightsee.jpeg" alt="food" class="image"></a>
         </div>
     </div>
 

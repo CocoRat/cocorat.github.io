@@ -14,6 +14,11 @@
             height: auto;
         }
 
+        .main-content {
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 4;
+        }
+
         .side-image-1 {
             grid-column: 3;
             grid-row: 2;
@@ -29,6 +34,17 @@
             grid-row: 4;
         }
 
+        .side-image-4 {
+            grid-column: 1;
+            grid-row: 6;
+        }
+
+        .resources {
+            grid-column: 2 / span 3;
+            grid-row: 6;
+
+        }
+
         .parralax {
             background-image: url(images/seattle_center.jpg);
             min-height: 400px;
@@ -38,15 +54,19 @@
             background-size: cover;
         }
 
-        .main-content {
-            grid-column: 1 / span 2;
-            grid-row: 2 / span 5;
+        #main-header {
+            outline-color: white;
+            outline-style: solid;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
 <body>
-
     <div class="grid-container">
         <div class="grid-item navmenu">
             <div class="nav">
@@ -67,18 +87,22 @@
             </div>
         </div>
     </div>
-    <div class="parralax"></div>
+
+    <div class="parralax">
+        <h1 id="main-header">PNW EXPLORERS</h1>
+    </div>
 
     <div class="grid-container">
         <div class="grid-item main-content">
             <h2>Welcome to the Pacific Northwest!</h2>
-            <p>There are so many fun things to do in the greater Seattle area! Click on the images for some unique activities and ideas for exploring Seattle.</p>
+            <p>There are so many fun things to do in the greater Seattle area! Click on the images to the right for some
+                unique
+                activities and ideas for exploring Seattle.</p>
             <iframe width="640" height="360" src="https://www.youtube.com/embed/pcGmTUHIVMQ"
                 title="TOP 10 Things to do in SEATTLE - [2023 Travel Guide]" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
-
 
         <div class="grid-item side-image-1">
             <a href="food.html"><img src="images/index_food.jpg" alt="food" class="image"></a>
@@ -91,27 +115,50 @@
         <div class="grid-item side-image-3">
             <a href="placestosee.html"><img src="images/index_sightsee.jpeg" alt="food" class="image"></a>
         </div>
+
+        <div class="grid-item side-image-4">
+            <img src="images/lake_union.jpg" alt="lake union" class="image">
+            <p>Lake Union in Seattle</p>
+        </div>
+
+        <div class="grid-item resources">
+            <h2>More resources</h2>
+            <table>
+                <tr>
+                    <th>
+                        <p style="text-align: center;">City</p>
+                    </th>
+                    <th>
+                        <p style="text-align: center;">Official Tourist Website</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Seattle</p>
+                    </th>
+                    <th><a href="https://www.visitseattle.org.com/" target="_blank" style="color: aliceblue;">
+                            <p>visit seattle</p>
+                        </a></th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Kirkland</p>
+                    </th>
+                    <th><a href="https://www.explorekirkland.com/" target="_blank" style="color: aliceblue;">
+                            <p>explore kirkland</p>
+                        </a></th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Bellevue</p>
+                    </th>
+                    <th><a href="https://www.visitbellevuewa.com/" target="_blank" style="color: aliceblue;">
+                            <p>visit bellevue</p>
+                        </a></th>
+                </tr>
+            </table>
+        </div>
     </div>
-
-    <table>
-        <tr>
-            <th>city</th>
-            <th>official tourist website</th>
-        </tr>
-        <tr>
-            <th>seattle</th>
-            <th><a href="https://www.visitseattle.org.com/" target="_blank">visit seattle</a></th>
-
-        </tr>
-        <tr>
-            <th>kirkland</th>
-            <th><a href="https://www.explorekirkland.com/" target="_blank">explore kirkland</a></th>
-        </tr>
-        <tr>
-            <th>bellevue</th>
-            <th><a href="https://www.visitbellevuewa.com/" target="_blank">visit bellevue</a></th>
-        </tr>
-    </table>
 
     <div class="footer">Maya Park-Weber</div>
 

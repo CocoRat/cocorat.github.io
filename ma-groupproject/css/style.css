@@ -4,7 +4,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 35% 35% 30%;
-    grid-gap: 10px;
+    grid-gap: 15px;
 
 }
 
@@ -20,15 +20,6 @@
     grid-row: 1;
 }
 
-.main-image {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-}
-
-.main-content {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 5;
-}
 
 /*appearance*/
 body {
@@ -71,7 +62,7 @@ p {
     padding: 14px 16px;
     text-decoration: none;
     font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: basic-sans;
     color: #fbfff1;
 }
 
@@ -87,7 +78,7 @@ p {
     padding: 14px 16px;
     background-color: #3C3744;
     font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: basic-sans;
     margin: 0;
 }
 
@@ -134,4 +125,5 @@ p {
     width: 100%;
     left: 0;
     bottom: 0;
+    padding: 5px;
 }

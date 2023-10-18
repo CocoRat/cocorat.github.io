@@ -4,28 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/lia0lti.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Food</title>
     <style>
         .main1 {
-            grid-column: 2/span 2;
+            grid-column: 1/span 3;
             grid-row: 2;
+            background-color: #090c9b;
         }
 
         .seconds {
-            grid-column: 2 / span 3;
+            grid-column: 2/span 3;
             grid-row: 3;
+            background-color: #b4c5e4;
+        }
+
+        .secondsdesc {
+            grid-column: 1/span 1;
+            grid-row: 3;
+
 
         }
 
         .daniels {
             grid-column: 1/span 2;
             grid-row: 4;
+            background-color: #090c9b;
+        }
+
+        .danielsdesc {
+            grid-column: 3/span 3;
+            grid-row: 4;
+
+        }
+
+        .maono {
+            grid-column: 2/span 3;
+            grid-row: 5;
+            background-color: #b4c5e4;
+        }
+
+        .maonodesc {
+            grid-column: 1/span 1;
+            grid-row: 5;
+        }
+
+        .mollymoons {
+            grid-column: 1/span 2;
+            grid-row: 6;
+            background-color: #b4c5e4;
+        }
+
+        .mollymoonsdesc {
+            grid-column: 3/span 3;
+            grid-row: 6;
         }
 
         .table {
-            grid-column: 1/span 2;
-            grid-row: 5;
+            grid-column: 1/span 3;
+            grid-row: 7;
         }
     </style>
 
@@ -35,15 +73,22 @@
 
     <div class="grid-container">
         <div class="grid-item navmenu">
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="indoor.html">Indoor activities</a></li>
-                <li><a class="active-navpage" href="food.html">Food</a></li>
-                <li><a href="shopping.html">Shopping</a></li>
-                <li><a href="placestosee.html">Places to see</a></li>
-                <li><a href="outdoor.html">Outdoor activities</a></li>
-                <li><a href="funfacts.html">Fun facts</a></li>
-            </ul>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a class="active-navpage" href="food.html">Food</a>
+                <a href="shopping.html">Shopping</a>
+                <a href="placestosee.html">Places to see</a>
+                <a href="funfacts.html">Fun facts</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Activities
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="outdoor.html">Outdoor</a>
+                        <a href="indoor.html">Indoor</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="grid-item main1">
@@ -52,27 +97,102 @@
         </div>
 
         <div class="grid-item seconds">
-            <img src="images/10seconds.jpeg" alt="10seconds">
+            <img src="images/10seconds.jpeg" alt="10seconds" style="width: 100%;">
+        </div>
+
+        <div class="grid-item secondsdesc">
+            <h2>Ten Seconds Yunnan Rice Noodle
+            </h2>
+            <p>A decade experience serving high quality dishes, using carefully selected seasonal ingredients. The
+                relaxing dining experience and most spectacular ambiance at Ten Seconds, with a team of noodle experts,
+                our main goal is to prepare food that satisfy and exceed our guest expectation.
+            </p>
         </div>
 
         <div class="grid-item daniels">
-            <img src="images/daniels.JPG" alt="daniels">
+            <img src="images/daniels.JPG" alt="daniels" style="width: 100%;">
+
+        </div>
+        <div class="grid-item danielsdesc">
+            <h2>Daniel's Broiler</h2>
+            <p>I recently had the pleasure of dining at Daniels Broiler, and I must say, it was an absolute delight from
+                start to finish. From the moment I stepped in, the ambience set the perfect tone for an elegant dining
+                experience. The dim lighting and sophisticated decor created an intimate and upscale atmosphere.
+            </p>
         </div>
 
+        <div class="grid-item maono">
+            <img src="images/maono.jpg" alt="maono" width="100%">
+        </div>
+
+        <div class="grid-item maonodesc">
+            <h1>Ma'ono</h1>
+            <p>My recent dining experience at Maono was nothing short of extraordinary. Nestled in the heart of the
+                city, this gem of a restaurant offers a fusion of flavors that left me utterly captivated. As I stepped
+                inside, the modern yet welcoming ambiance immediately set the stage for a memorable culinary journey.
+            </p>
+        </div>
+
+        <div class="grid-item mollymoons">
+            <img src="images/mollymoons.jpg" alt="mollymoons" style="width: 100%;">
+        </div>
+
+        <div class="grid-item mollymoonsdesc">
+            <h1>molly moons</h1>
+            <p>Molly Moon's Homemade Ice Cream has truly redefined the art of crafting delightful frozen treats.
+                Stepping into the vibrant, whimsical parlor instantly transported me back to the nostalgic joys of
+                childhood. The cheerful ambiance, combined with the tantalizing aroma of freshly made waffle cones, set
+                the stage for an unforgettable ice cream adventure.
+            </p>
+        </div>
+
+
+
+
         <div class="grid-item table">
+
             <body>
                 <table>
                     <tr>
-                        <th>cuisine</th>
                         <th>restaurant</th>
-                        <th></th>
+                        <th>locations</th>
                     </tr>
                     <tr>
-                        <td>chinese</td>
                         <td>10 Second Noodles</td>
+                        <td><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.249488695418!2d-122.13580702360625!3d47.621281371191266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d442af51151%3A0xf5f496b99ba921f5!2sTen%20Seconds%20Yunnan%20Rice%20Noodle!5e0!3m2!1sen!2sus!4v1697559164650!5m2!1sen!2sus"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+
                     </tr>
-                    <tr></tr>
-                    <tr></tr>
+
+                    <tr>
+                        <td>Daniel's Broiler</td>
+                        <td><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10755.8731550776!2d-122.35341247538575!3d47.626747682171704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153a4d2dafff%3A0x4069d1d838a8caf8!2sDaniel&#39;s%20Broiler!5e0!3m2!1sen!2sus!4v1697559379016!5m2!1sen!2sus"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                    </tr>
+
+                    <tr>
+
+                        <td>Ma'ono</td>
+                        <td><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86054.70966925904!2d-122.42506817052427!3d47.62205530574835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490148f4d2edc29%3A0xbe3130fa30633897!2sMa%E2%80%99ono%20Fried%20Chicken!5e0!3m2!1sen!2sus!4v1697559308896!5m2!1sen!2sus"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <p>Molly Moon's </p>
+                        </td>
+                        <td><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52335.963644446754!2d-122.13803076951557!3d47.668906219381824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549072ae06998c0d%3A0x639c7d39ba2a4fb!2sMolly%20Moon&#39;s%20Homemade%20Ice%20Cream!5e0!3m2!1sen!2sus!4v1697559417494!5m2!1sen!2sus"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                    </tr>
 
                 </table>
             </body>

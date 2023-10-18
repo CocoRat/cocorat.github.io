@@ -30,21 +30,6 @@
     grid-row: 3 / span 5;
 }
 
-.side-image-1 {
-    grid-column: 3;
-    grid-row: 3;
-}
-
-.side-image-2 {
-    grid-column: 3;
-    grid-row: 4;
-}
-
-.side-image-3 {
-    grid-column: 3;
-    grid-row: 5;
-}
-
 /*appearance*/
 body {
     background-color: #090c9b;

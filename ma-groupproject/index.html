@@ -8,9 +8,50 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lia0lti.css">
     <style>
-        img {
+        .image {
+            display: block;
             max-width: 100%;
             height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .side-image-1:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .side-image-1 {
+            grid-column: 3;
+            grid-row: 3;
+        }
+
+        .side-image-2 {
+            grid-column: 3;
+            grid-row: 4;
+        }
+
+        .side-image-3 {
+            grid-column: 3;
+            grid-row: 5;
         }
     </style>
 </head>
@@ -37,17 +78,25 @@
         </div>
 
         <div class="grid-item main-image">
-            <img src="images/Seattle_Center_as_night_falls.jpg" alt="seattle center as night falls">
+            <img src="images/Seattle_Center_as_night_falls.jpg" alt="seattle center as night falls" class="image">
         </div>
 
         <div class="grid-item main-content">
-            <h2>overview</h2>
+            <h2>Welcome!</h2>
             <p>There are so many fun things to do in the greater Seattle area! Browse this website for some unique
                 ideas and activites.</p>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/pcGmTUHIVMQ"
+                title="TOP 10 Things to do in SEATTLE - [2023 Travel Guide]" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
 
+
         <div class="grid-item side-image-1">
-            <a href="food.html"><img src="images/index_food.jpg" alt="food"></a>
+            <img src="images/index_food.jpg" alt="food" class="image">
+            <div class="overlay">
+                <div class="text">hello there</div>
+            </div>
         </div>
 
         <div class="grid-item side-image-2">

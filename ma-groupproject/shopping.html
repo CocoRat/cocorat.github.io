@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Shopping</title>
     <style>
+        .slide-right {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slide-right h1 {
+            animation: 2s slide-right;
+        }
+
+        @keyframes slide-right {
+            from {
+                margin-left: -100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+
         .main1 {
             grid-column: 1/span 3;
             grid-row: 2;
@@ -20,6 +42,13 @@
             grid-row: 3;
         }
 
+        .bellevuemallvid {
+            grid-column: 3/span 3;
+            grid-row: 4;
+            background-color: #b4c5e4;
+
+        }
+
         .bellevuemalldesc {
             grid-column: 1/span 2;
             grid-row: 4;
@@ -27,9 +56,20 @@
 
         }
 
+
+
+
+
         .uvillage {
             grid-column: 1/span 3;
             grid-row: 5;
+        }
+
+        .uvillagevid {
+            grid-column: 1/span 1;
+            grid-row: 6;
+            background-color: #b4c5e4;
+
         }
 
         .uvillagedesc {
@@ -43,6 +83,13 @@
         .pike {
             grid-column: 1/span 3;
             grid-row: 7;
+        }
+
+        .pikevid {
+            grid-column: 3/span 3;
+            grid-row: 8;
+            background-color: #b4c5e4;
+
         }
 
         .pikedesc {
@@ -81,13 +128,20 @@
         </div>
 
 
-        <div class="grid-item main1">
+        <div class="grid-item main1 slide-right">
             <h1>Shopping</h1>
             <h2>Favorite shopping spots from locals </h2>
         </div>
 
         <div class="grid-item bellevuemall">
             <img src="images/bellevuemall.jpg" alt="bellsquare">
+        </div>
+
+        <div class="grid-item bellevuemallvid">
+            <iframe width="560" height="315" src="https://youtube.com/embed/2eY69H2HvvM?si=Z4A_rl_lc9JWBBjU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="width: 100%; height: 400px;"></iframe>
         </div>
 
         <div class="grid-item bellevuemalldesc">
@@ -105,6 +159,13 @@
 
         <div class="grid-item uvillage">
             <img src="images/uvillage.jpg" alt="uvillage" style="width: 100%;">
+        </div>
+
+        <div class="grid-item uvillagevid">
+            <iframe width="560" height="315" src="https://youtube.com/embed/aL_tnsmeavo?si=Ya0fvx70rvVhUtMA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="width: 100%; height: 400px;"></iframe>
         </div>
 
         <div class="grid-item uvillagedesc">
@@ -126,6 +187,13 @@
             <img src="images/pikeplace.jpg" alt="pike">
         </div>
 
+        <div class="grid-item pikevid"> <iframe width="560" height="315"
+                src=https://youtube.com/embed/82byORQyTVw?si=8QI_avxsAthT5Eob title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="width: 100%; height: 400px;"></iframe>
+        </div>
+
         <div class="grid-item pikedesc">
             <h1>Pike Place</h1>
             <p>The market is famous for its wide array of fresh produce, locally sourced food products, and specialty
@@ -143,7 +211,7 @@
                     <h2>Shopping</h2>
                 </th>
                 <th>
-                    <h2>Address</h2>
+                    <h2>Location</h2>
                 </th>
             </tr>
             <tr>

@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Food</title>
     <style>
+        .slide-right {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slide-right h1 {
+            animation: 2s slide-right;
+        }
+
+        @keyframes slide-right {
+            from {
+                margin-left: -100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
         .main1 {
             grid-column: 1/span 3;
             grid-row: 2;
@@ -30,7 +51,7 @@
         .daniels {
             grid-column: 1/span 2;
             grid-row: 4;
-            background-color: #090c9b;
+            background-color: #b4c5e4;
         }
 
         .danielsdesc {
@@ -65,6 +86,26 @@
             grid-column: 1/span 3;
             grid-row: 7;
         }
+
+        img:hover {
+            box-shadow: 0 0 15px 15px #FBFFF1;
+        }
+
+        td {
+            background-color: #090c9b;
+            border: 0px;
+        }
+
+        th {
+            border: 0px;
+        }
+
+        table {
+            border: 5px solid #FBFFF1;
+            border-radius: 10px;
+
+
+        }
     </style>
 
 </head>
@@ -91,13 +132,16 @@
             </div>
         </div>
 
-        <div class="grid-item main1">
+        <div class="grid-item main1 slide-right">
+
             <h1>Food</h1>
             <h2>Some of the best eats across Seattle!</h2>
         </div>
 
         <div class="grid-item seconds">
-            <img src="images/10seconds.jpeg" alt="10seconds" style="width: 100%;">
+            <a target="_blank" href="https://www.tensecondsbellevue.com/"> <img src="images/10seconds.jpeg"
+                    alt="10seconds" style="width: 100%;"></a>
+
         </div>
 
         <div class="grid-item secondsdesc">
@@ -107,10 +151,13 @@
                 relaxing dining experience and most spectacular ambiance at Ten Seconds, with a team of noodle experts,
                 our main goal is to prepare food that satisfy and exceed our guest expectation.
             </p>
+
+
         </div>
 
         <div class="grid-item daniels">
-            <img src="images/daniels.JPG" alt="daniels" style="width: 100%;">
+            <a target="_blank" href="https://danielsbroiler.com/"><img src="images/daniels.JPG" alt="daniels"
+                    style="width: 100%;"></a>
 
         </div>
         <div class="grid-item danielsdesc">
@@ -122,7 +169,8 @@
         </div>
 
         <div class="grid-item maono">
-            <img src="images/maono.jpg" alt="maono" width="100%">
+            <a target="_blank" href="https://www.maonoseattle.com/"><img src="images/maono.jpg" alt="maono"
+                    width="100%"></a>
         </div>
 
         <div class="grid-item maonodesc">
@@ -134,7 +182,8 @@
         </div>
 
         <div class="grid-item mollymoons">
-            <img src="images/mollymoons.jpg" alt="mollymoons" style="width: 100%;">
+            <a target="_blank" href="https://www.mollymoon.com/"><img src="images/mollymoons.jpg" alt="mollymoons"
+                    style="width: 100%;"></a>
         </div>
 
         <div class="grid-item mollymoonsdesc">
@@ -152,13 +201,12 @@
         <div class="grid-item table">
 
             <body>
-                <table>
+                <table class="rounded">
+
                     <tr>
-                        <th>restaurant</th>
-                        <th>locations</th>
-                    </tr>
-                    <tr>
-                        <td>10 Second Noodles</td>
+                        <td>
+                            <p>10 Second Noodles</p>
+                        </td>
                         <td><iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.249488695418!2d-122.13580702360625!3d47.621281371191266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d442af51151%3A0xf5f496b99ba921f5!2sTen%20Seconds%20Yunnan%20Rice%20Noodle!5e0!3m2!1sen!2sus!4v1697559164650!5m2!1sen!2sus"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -167,7 +215,9 @@
                     </tr>
 
                     <tr>
-                        <td>Daniel's Broiler</td>
+                        <td>
+                            <p>Daniel's Broiler</p>
+                        </td>
                         <td><iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10755.8731550776!2d-122.35341247538575!3d47.626747682171704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153a4d2dafff%3A0x4069d1d838a8caf8!2sDaniel&#39;s%20Broiler!5e0!3m2!1sen!2sus!4v1697559379016!5m2!1sen!2sus"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -176,7 +226,9 @@
 
                     <tr>
 
-                        <td>Ma'ono</td>
+                        <td>
+                            <p>Ma'ono</p>
+                        </td>
                         <td><iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86054.70966925904!2d-122.42506817052427!3d47.62205530574835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490148f4d2edc29%3A0xbe3130fa30633897!2sMa%E2%80%99ono%20Fried%20Chicken!5e0!3m2!1sen!2sus!4v1697559308896!5m2!1sen!2sus"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"

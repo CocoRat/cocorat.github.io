@@ -6,6 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outdoor Activities</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+               .title {
+            grid-column: 1/span 3;
+            grid-row: 2;
+            background-color: #3252d5;
+            font-size: 40px;
+        }
+        .desc {
+            grid-column: 1/span 3;
+            grid-row: 3;
+            background-color: #3252d5;
+            font-size: 20px;
+        }
+
+        .bikevid {
+            grid-column: 2/span 3;
+            grid-row: 4;
+            background-color: #3252d5;
+        }
+
+        .bikeword {
+            grid-column: 1;
+            grid-row: 4;
+            background-color: #3252d5;
+        }
+
+        .hike {
+            grid-column: 1;
+            grid-row: 5;
+            background-color: #3252d5;
+        }
+.hiketable {
+    grid-column: 2;
+    grid-row: 5;
+}
+        .hikeword {
+            grid-column: 3;
+            grid-row: 5;
+            background-color: #3252d5;
+        }
+
+        .drive {
+            grid-column: 2/span 3;
+            grid-row: 6;
+            background-color: #3252d5;
+        }
+
+        .driveword {
+            grid-column: 1;
+            grid-row: 6;
+            background-color: #3252d5;
+        }
+        table, th, td {
+  border: 1px solid;
+  background-color: #3252d5;
+}
+        
+    </style>
 </head>
 
 <body>
@@ -31,26 +89,56 @@
     <div class="footer">
         Jakob
     </div>
-    <h1>Best outdoor activities in the Greater Seattle area</h1>
-    <p>The PNW is known for the incredible beauty of the outdoors. These are the top 5 things to do if you come to the greater Seattle area and are looking for an outdoor adventure.</p>
-    <h1>Mountain Biking</h1>
-    <p>The Pacific Northwest is known for a wide variety of riding. In rain and shine there is something for the Seattle area to provide when it comes to Mountain Bikes.</p>
-    <h2>Galbraith</h2>
-    <p>Nestled in the picturesque town of Bellingham, a mere two-hour drive from the bustling city of Seattle, Galbraith emerges as a haven for biking enthusiasts. This outdoor utopia boasts an extensive network of trails, stretching over an impressive 65 miles. Each trail is a thrilling adventure waiting to unfold, adorned with an abundance of jumps, berms, and technical features that would leave any rider exhilarated and challenged.
-    For those new to the world of mountain biking, gentle, winding paths wind through the forest, providing a welcoming environment to develop and hone basic skills. These trails offer a scenic journey through the natural beauty of Galbraith, allowing beginners to build confidence while enjoying the tranquil surroundings.
-    The true thrill-seekers and experienced riders will find their match on advanced trails that push the limits of skill and courage. Galbraith's challenging descents, daring jumps, and intricate technical sections provide the ultimate playground for those seeking an adrenaline rush and an opportunity to showcase their skill.
-    </p>
-    <h2>Tiger mountain</h2>
-    <p>Tiger Mountain, located just outside Seattle, is a mecca for mountain biking enthusiasts. Renowned for its diverse trail network and stunning natural beauty, Tiger Mountain offers an exhilarating and challenging experience for riders of various skill levels.
-    One of the key highlights of Tiger Mountain is its extensive trail system, featuring a variety of routes that cater to everyone from beginners to advanced riders. Novice cyclists can ease into the sport on well-maintained and beginner-friendly trails, allowing them to build confidence while surrounded by the serene beauty of the mountainous terrain.
+    <h1 class="title" style="">Best outdoor activities in the Greater Seattle area</h1>
+    <p class="desc">The PNW is known for the incredible beauty of the outdoors. These are the top 5 things to do if you come to the greater Seattle area and are looking for an outdoor adventure.</p>
+    <div class="bikeword">
+        <ol style="font-size: 40px;">Mountain Biking</ol>
+        <ol style="font-size: 25;">The Pacific Northwest is renowned for its diverse mountain biking experiences, catering to riders in every weather condition. Rain or shine, the Seattle area provides an array of trails, ensuring there's always an exciting adventure awaiting mountain bike enthusiasts. Whether you're navigating lush forests or tackling rugged terrains, the Pacific Northwest offers a unique and thrilling playground for cyclists. The region's commitment to year-round biking, even in the rain, adds an extra layer of excitement to the sport. Some local trails to check out are Duthie hill, Tiger Mountain, and Galbraith</ol>
+    </div>
+    <div class="hikeword">
+        <h1>Hiking</h1>
+        <p>In the heart of Washington state, hiking becomes a journey through diverse landscapes, from serene forest paths to challenging mountain ascents. The trails unveil the Pacific Northwest's iconic scenery — towering evergreens, cascading waterfalls, and alpine meadows. Whether seeking solitude or shared adventure, Washington's hiking trails promise an immersive experience in nature's awe-inspiring beauty. Lace up your boots, breathe in the mountain air, and explore the enchanting allure of the state's picturesque trails.</p>
+        <table>
+            <tr>
+                <th>hike</th>
+                <th>Length</th>
+            </tr>
+            <tr>
+                <td>Snow Lake</td>
+                <td>6.7 Miles</td>
+            </tr>
+            <tr>
+                <td>The Heather</td>
+                <td>7 Miles</td>
+            </tr>
+            <tr>
+                <td>The skyline trail</td>
+                <td>6 Miles</td>
+            </tr>
+            <tr>
+                <td>The Enchantments</td>
+                <td>18+ Miles</td>
+            </tr>
+            <tr>
+                <td>Colchuck Lake</td>
+                <td>8 Miles</td>
+            </tr>
+            <tr>
+                <td>Blue Lake</td>
+                <td>4.5 Miles</td>
+            </tr>
+        </table>
+    </div>
+    <div class="driveword">
+        <ol style="font-size: 40px;">Driving</ol>
+        <ol style="font-size: 20px;">Embark on a scenic escapade through the picturesque roads of Washington state, where every twist and turn unveils a captivating panorama. From the winding roads of the Cascade Loop, offering breathtaking mountain views, to the iconic Pacific Coast Highway tracing the rugged coastline, scenic drives in Washington promise a visual feast of diverse landscapes. Traverse through lush forests, along shimmering lakes, and beside charming small towns, immersing yourself in the natural beauty that defines the Evergreen State. Whether chasing sunset hues along the Columbia River Gorge or winding through the enchanting Olympic Peninsula, Washington's scenic drives offer a captivating journey for those seeking the perfect blend of adventure and stunning vistas.</ol>
+    </div>
+    <img class="drive" src="images/roadtrip.webp" alt="Washington Roadtrip image">
+    <img style="width: 200%; height: 85%;" class="hike" src="images/Hike.jpg" alt="Image of lake in Washington">
 
-    For the seasoned experts seeking an extra dose of adrenaline, Tiger Mountain delivers with advanced and expert-level trails. These trails are designed to push the limits of skill and courage, featuring steep descents, challenging rock gardens, and jumps that provide a thrilling challenge for even the most experienced riders.
-    Beyond the trails, Tiger Mountain offers breathtaking panoramic views of the Cascade Range, adding a scenic backdrop to every ride. The Pacific Northwest's signature evergreen forests surround the trails, creating a serene and immersive experience that enhances the joy of mountain biking.
-    </p>
-    <h2>Duthie</h2>
-    <p>If you are looking for a more local option, Duthie hill sits about 30 minutes away from Seattle in the Issaquah highlands.</p>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YPUVXtwawfY?si=41HSC4P1WhtQm1uS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="840" height="473" src="https://www.youtube.com/embed/YPUVXtwawfY?si=41HSC4P1WhtQm1uS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="bikevid"></iframe>
+    
+    
 
 </body>
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demo</title>
+</head>
+
+<body>
+    <h1>Let us learn javascript</h1>
+    <h2>how do we do onclick events and alerts on an anchor</h2>
+    <a href="https://w3schools.com" target="_blank"
+        onclick="alert('warning! you are navigating away from this webpage!')">w3 schools</a>
+
+    <h2>what is my secret identity?</h2>
+    <p id="secret"></p>
+    <button
+        onclick="document.getElementById('secret').innerHTML='nananananananana batman!'; document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Conceal!</button>
+
+    <h2>two truths and a lie</h2>
+    <ol>
+        <li id="lie">I have a younger sister</li>
+        <li>My favorite brand of instant ramen is Shin Ramen</li>
+        <li>I have never broken a bone</li>
+    </ol>
+    <button onclick="document.getElementById('lie').style.color='red'">reveal the lie</button>
+
+    <h2>how do we change an image with javascript?</h2>
+    <img id="bulb" src="images/pic_bulboff.gif" alt="bulb that is off">
+    <button onclick="document.getElementById('bulb').src='images/pic_bulbon.gif'">on</button>
+    <button onclick="document.getElementById('bulb').src='images/pic_bulboff.gif'">off</button>
+
+    <h2>how do we change css with a button?</h2>
+    <p id="alice">Hello. I am Alice.</p>
+    <button
+        onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px';">cake:
+        eat me</button>
+    <button
+        onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='24px';">potion:drink
+        me</button>
+
+    <h2>how do we return user input?</h2>
+    <button onclick="askName()">what is your name?</button>
+    <p id="ask-name"></p>
+
+    <script>
+        function askName() {
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt('What is your name?');
+            // decide what to do
+            if (name === 'batman') {
+                nameParagraph.innerHTML = 'welcome to the batcave, sir.'
+            } else {
+                nameParagraph.innerHTML = 'hello ' + name;
+            }
+        }
+    </script>
+
+    <h2>individual challenge: mess around</h2>
+</body>
+
+</html>

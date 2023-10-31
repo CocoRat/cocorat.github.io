@@ -16,10 +16,8 @@
 
 <body class="bg-dark text-white">
     <div class="container-fluid">
-
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
             <div class="container-fluid">
-
                 <ul class="navbar-nav">
                     <a class="navbar-brand" href="#">
                         <img src="images/twitter.png" alt="twitter bird" style="width:40px;" class="rounded-pill">
@@ -30,6 +28,51 @@
                 </ul>
             </div>
         </nav>
+
+        <!--boostrap carousel-->
+        <!--data-bs-ride this sets the carousel to autoscroll-->
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!--carousel slides-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!--d-block sets display to block, and w-100 sets width to 100%-->
+                    <img src="images/jackolantern.png" alt="lack o lanters" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <!--NEW BOOTSTRAP ELEMENT: text background color-->
+                        <h3 class="text-bg-dark">Jack-o-Lanterns</h3>
+                        <p class="text-bg-dark">Classic Halloween decorations</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--d-block sets display to block, and w-100 sets width to 100%-->
+                    <img src="images/samhain.png" alt="samhain" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <!--NEW BOOTSTRAP ELEMENT: text background color-->
+                        <h3 class="text-bg-dark">Samhain</h3>
+                        <p class="text-bg-dark">Halloween has origins in the Celtic tradition of Samhain</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--d-block sets display to block, and w-100 sets width to 100%-->
+                    <img src="images/trick-or-treat.png" alt="trick or treating" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <!--NEW BOOTSTRAP ELEMENT: text background color-->
+                        <h3 class="text-bg-dark">Trick-or-Treat</h3>
+                        <p class="text-bg-dark">Children go trick-or-treating for candy</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--left and right carousel controls-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
 
         <div class="container p-5 m-5 mx-auto border">
             <div class="row">
@@ -75,6 +118,7 @@
         </div>
 
     </div>
+
 </body>
 
 </html>

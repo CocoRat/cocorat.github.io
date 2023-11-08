@@ -16,8 +16,12 @@ h5 {
 
 .blog-post {
     margin-bottom: 4rem;
-  }
+}
 
-body {
-    background-color: rgb(63, 197, 197);
+.button-color {
+    background-color: rgb(107, 127, 217);
+}
+
+.hightlight-text {
+    color: rgb(57, 139, 57);
 }

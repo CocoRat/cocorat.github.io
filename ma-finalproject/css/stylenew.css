@@ -18,10 +18,46 @@ h5 {
     margin-bottom: 4rem;
 }
 
-.button-color {
-    background-color: rgb(107, 127, 217);
+.primary-text {
+    color: rgb(64, 131, 64);
 }
 
-.hightlight-text {
-    color: rgb(57, 139, 57);
+.secondary-text {
+    color: rgb(107, 127, 217);
+}
+
+.primary-background {
+    background-color: rgb(64, 131, 64);
+}
+
+.secondary-background {
+    background-color: rgb(105, 129, 226);
+}
+
+.secondary-background-light {
+    background-color: rgba(105, 129, 226, 0.781);
+}
+
+hr.solid {
+    border-top: 7px solid rgb(64, 131, 64);
+    margin-top: -6px;
+    padding-top: 0px;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }

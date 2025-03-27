@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lia0lti.css">
+
 </head>
 
 
+
 <body>
+
     <div class="container-fluid">
-        <div class="d-flex py-1 mb-2 bg-light">
+        <div class="d-flex py-1 bg-light">
             <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand mx-2" href="#">Navbar</a>
                 <div class="navbar-nav mr-auto">
                     <a href="index.html" class="nav-item nav-link px-2 link-secondary">Home</a>
                     <a href="contact.html" class="nav-item nav-link px-2 link-body-emphasis">Contact</a>
@@ -25,32 +31,16 @@
             </nav>
         </div>
     </div>
-    <div class="col-lg-12 mt-4">
+
+    <div class="col-lg-12">
         <img class="img-fluid hero-image" src="images/smoothie.png" alt="Booktree banner">
         <div class="hero-text">
-            <h1>Welcome</h1>
+            <h1 class="text-bg-light">Delicious Smoothies for Everyone</h1>
         </div>
     </div>
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-        <h1 class="display-3 fw-bold">Designed for engineers</h1>
-        <h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
-        <div class="d-flex gap-3 justify-content-center lead fw-normal">
-            <a class="icon-link" href="#">
-                Learn more
-                <svg class="bi">
-                    <use xlink:href="#chevron-right" />
-                </svg>
-            </a>
-            <a class="icon-link" href="#">
-                Buy
-                <svg class="bi">
-                    <use xlink:href="#chevron-right" />
-                </svg>
-            </a>
-        </div>
-    </div>
+
     <div>
-        <button type="button" class="btn button-sticky" data-bs-toggle="modal" data-bs-target="#greetingModal">
+        <button type="button" class="btn-sticky" data-bs-toggle="modal" data-bs-target="#greetingModal">
             GET FREE STUFF
         </button>
         <div class="modal fade" id="greetingModal" role="dialog">
@@ -65,17 +55,33 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn"><a href="contact.html">Learn More</a></button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="footer py-3">
-        <p>hello</p>
-    </footer>
+    <div class="container col-lg-12 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-2 col-lg-6">
+                <img src="images/fruits.jpg" class="d-block mx-lg-auto img-fluid" width="900" height="700">
+            </div>
+            <div class="col-lg-6">
+                <h1>Fresh fruit</h1>
+                <p>Cras malesuada lobortis arcu et dictum. Donec mollis justo velit. Curabitur a vulputate nibh. Quisque
+                    id feugiat nisl, sed aliquet quam. Pellentesque ullamcorper dui vel leo tristique luctus.</p>
+                <div class=" d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-sm btn-outline-dark px-4 me-md-2"><a href="faqs.html">Learn
+                            more</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <footer class="py-3 mt-5 bg-body-tertiary">
+        <p class="text-center text-body-secondary ">© 2024 Smoothies, Inc</p>
+    </footer>
 
 </body>
 

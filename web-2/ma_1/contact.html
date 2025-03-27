@@ -15,10 +15,10 @@
 </head>
 
 <body>
+
     <div class="container-fluid">
         <div class="d-flex py-1 mb-2 bg-light">
             <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand mx-2" href="#">Navbar</a>
                 <div class="navbar-nav mr-auto">
                     <a href="index.html" class="nav-item nav-link px-2 link-body-emphasis">Home</a>
                     <a href="contact.html" class="nav-item nav-link px-2 link-secondary">Contact</a>
@@ -27,26 +27,55 @@
             </nav>
         </div>
     </div>
-    <div class="container">
-        <h2>Contact Us!</h2>
-        <form action="#">
-            <div class="field">
-                <label for="name">Name</label>
-                <input id="name" type="text" required>
+
+    <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-6">
+                <h1>Contact Us!</h1>
+                <form action="#">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="address">Address</label>
+                        <input id="address" type="text" value="10613 NE 38th Pl" disabled>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+                    </div>
+                    <div class="actions">
+                        <button class="button">Save</button>
+                    </div>
+                </form>
             </div>
-            <div class="field">
-                <label for="address">Address</label>
-                <input id="address" type="text" value="10613 NE 38th Pl" disabled>
+
+            <div class="col-md-6 bg-light p-5">
+                <h4>Hours of Operation</h4>
+                <p>
+                    Monday: Noon to 5:15 p.m. <br>
+
+                    Tue-Wed: 11:30 a.m. to 5:30 p.m. <br>
+
+                    Thursday: CLOSED <br>
+
+                    Friday: 11:30 a.m. to 5:30 pm <br>
+
+                    Saturday: 11:30 am to 5:30pm <br>
+
+                    Sunday: CLOSED
+                </p>
             </div>
-            <div class="field">
-                <label for="email">Email</label>
-                <input id="email" type="email">
-            </div>
-            <div class="actions">
-                <button class="button">Save</button>
-            </div>
-        </form>
+
+        </div>
     </div>
+
+    <footer class="py-3 mt-5 bg-body-tertiary">
+        <p class="text-center text-body-secondary ">© 2024 Smoothies, Inc</p>
+    </footer>
+
 
 </body>
 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cookie Greeting</title>
+    <style>
+        /* Light CSS styling to make it look a bit nicer */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #greeting {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        #nameForm {
+            margin-top: 20px;
+        }
+
+        input[name="username"] {
+            padding: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            padding: 5px 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="greeting">Welcome!</div>
+
+    <div id="nameForm">
+        <p>Please enter your name:</p>
+        <input type="text" id="nameInput" name="username" placeholder="Your name" />
+        <button id="saveName">Save Name</button>
+    </div>
+
+    <div>
+        <h1>Shopping Cart</h1>
+        <div id="shoppingCart" name="cartitems">Items in cart: 0</div>
+        <button id="addItem">Add item to cart</button>
+    </div>
+
+
+    <script>
+        function getCookie(name) {
+            // Split the cookie string by ';' into individual "name=value" parts
+            const parts = document.cookie.split(';');
+            for (let part of parts) {
+                let [cookieName, cookieValue] = part.split('=');
+                cookieName = cookieName.trim();
+                if (cookieName === name) {
+                    return decodeURIComponent(cookieValue);
+                }
+            }
+            return null;
+        }
+
+        // check if a username cookie already exists
+        const savedName = getCookie("username");
+
+        const greetingDiv = document.getElementById("greeting");
+        const formDiv = document.getElementById("nameForm");
+
+        if (savedName) {
+            //if cookie found, greet user and hide form
+            greetingDiv.textContent = "Welcome back, " + savedName
+            formDiv.style.display = "none"
+        }
+
+        //when the save name button is clicked
+        document.getElementById("saveName").addEventListener("click", () => {
+            const nameValue = document.getElementById("nameInput").value;
+            if (nameValue) {
+                //set a cookie username = <name> that lasts 30 days and is available site-wide
+                const expirationDate = new Date();
+                expirationDate.setTime(expirationDate.getTime() + 30 * 24 * 60 * 60 * 1000);
+                document.cookie = "username=" + encodeURIComponent(nameValue) + "; expires=" + expirationDate.toUTCString() + "; path=/";
+                // update the greeting
+                greetingDiv.textContent = "Hello, " + nameValue + "! Nice to meet you.";
+                formDiv.style.display = "none"
+            }
+        })
+
+        // shopping cart
+        const savedCart = getCookie("cartitems");
+
+        const cartDiv = document.getElementById("shoppingCart");
+
+        if (savedCart) {
+            cartDiv.textContent = "Items in cart: " + savedCart
+        }
+        document.getElementById("addItem").addEventListener("click", () => {
+            var itemCount = Number(savedCart) + 1;
+            cartDiv.textContent = "Items in cart: " + itemCount;
+            document.cookie = "cartitems=" + encodeURIComponent(itemCount) + "; path=/";
+        })
+    </script>
+
+</body>
+
+</html>

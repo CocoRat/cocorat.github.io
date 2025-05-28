@@ -1,0 +1,55 @@
+const sendBtn = document.getElementById("postButton")
+sendBtn.addEventListener("click", async () => {
+    event.preventDefault(); //prevents page from loading
+
+    const formData = {
+        post: document.getElementById("newpost").value,
+    };
+
+    const url = "${BASE}/${COLLECTION}?key=${API_KEY}";
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    })
+
+        .then(response => response.json())
+        .then(data => {
+            console.log("Success:", data)
+            dataForm.reset()
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+
+});
+
+
+// get data and post
+window.addEventListener('DOMContentLoaded', loadMessages);
+window.addEventListener("load", () => {
+fetch("https://firestore.googleapis.com/v1/projects/forumbackend-c175a/databases/(default)/documents/messages/?key=AIzaSyDwbwMyb66teAKL5BVNA3Jx7n6bwjek0AQ")
+.then(response => response.json())
+.then(data => {
+displayDataInTable(data);
+})
+.catch(error => {
+console.error("Error fetching data:", error);
+});
+});
+
+function displayDataInTable(data) {
+const tableBody = document.getElementById("tableBody");
+data.forEach((entry) => {
+const row = document.createElement("tr");
+
+const postCell = document.createElement("td");
+postCell.textContent = entry.post;
+row.appendChild(postCell);
+
+tableBody.appendChild(row);
+});
+}

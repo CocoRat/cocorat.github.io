@@ -4,7 +4,9 @@
 // init project
 const express = require("express");
 const app = express();
-const messages = [{ "name": "John Doe", "age": 20 }];
+
+//n-memory data store
+let submissions = [];
 
 // we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
@@ -18,21 +20,25 @@ app.get("/", function (request, response) {
     response.sendFile(__dirname + "/index.html");
 });
 
-app.post('/messages', (req, res) => {
-    const newMessage = req.body.text; //assuming the client sends an object with a "text" field
+app.get("/display", function (request, response) {
+    response.sendFile(__dirname + "/display.html")
+});
 
-    if (newMessage) {
-        messages.push(newMessage);
+app.put('/submissions', (req, res) => {
+    const newData = req.body; //assuming the client sends an object with a "text" field
+
+    if (newData) {
+        submissions.push(newData);
         res.status(201).json({ success: true })
     }
     else {
         res.status(400).json({ success: false, error: "No text provided" })
     }
-})
+});
 
 // get request comes to the path messages
-app.get("/messages", (req, res) => {
-    res.json(messages);
+app.get("/submissions", (req, res) => {
+    res.json(submissions);
 })
 
 // listen for requests :)

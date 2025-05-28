@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="navmenu">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active-navpage" href="display.html">Display</a></li>
+        </ul>
+    </div>
+    <h1>text</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Favorite Color</th>
+                <th>Hobby</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Rows will be injected here by JavaScript -->
+        </tbody>
+    </table>
+</body>
+
+<script>
+    window.addEventListener('load', () => {
+        fetch("https://quiet-diligent-seed.glitch.me/submissions")
+            .then(response => response.json())
+            .then(data => {
+                // data is an array of submissions
+                displayDataInTable(data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    });
+
+    function displayDataInTable(data) {
+        const tableBody = document.getElementById('tableBody');
+        data.forEach((entry) => {
+            const row = document.createElement('tr');
+
+            const fnameCell = document.createElement('td');
+            fnameCell.textContent = entry.fname;
+            row.appendChild(fnameCell);
+
+            // Additional fields
+            const lnameCell = document.createElement('td');
+            lnameCell.textContent = entry.lname;
+            row.appendChild(lnameCell);
+
+            const ageCell = document.createElement('td');
+            ageCell.textContent = entry.age;
+            row.appendChild(ageCell);
+
+            tableBody.appendChild(row);
+        });
+    }
+</script>
+
+
+
+</html>

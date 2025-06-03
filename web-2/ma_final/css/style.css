@@ -16,15 +16,10 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/w3images/profile_girl.jpg');
+    background-image: url('../images/image_001.png');
     min-height: 100%;
 }
 
-.scroll-container {
-    height: 1000px;
-    /* large enough to allow scrolling */
-    background: #000;
-}
 
 canvas {
     position: fixed;
@@ -37,31 +32,6 @@ canvas {
 #hire_button {
     position: fixed;
     margin: auto;
-    border: 1px solid black;
-    animation-duration: 12s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: spin;
-
-}
-
-@keyframes spin {
-
-    0% {
-        transform: rotate(0deg) scale(1);
-        opacity: 1;
-        offset-distance: 0px;
-        animation-timing-function: linear;
-    }
-
-    100% {
-        transform: rotate(360deg) scale(1);
-        opacity: 1;
-        offset-distance: 0px;
-    }
-
-
+    will-change: transform;
+    cursor: url("../images/plane_icon.svg") 10 10, auto;
 }

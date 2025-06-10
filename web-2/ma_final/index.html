@@ -4,48 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maya's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 
 <body>
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
     <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
-        style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        style="display:none;padding-top:150px;right:0;z-index:2; font-family: 'Space Grotesk', sans-serif; font-optical-sizing: auto;"
+        id="mySidebar">
         <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
             style="padding:0 12px;">
             <i class="fa fa-remove"></i>
         </a>
         <div class="w3-bar-block w3-center">
-            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-orange w3-hover-black" onclick="closeNav()">Home</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
                 onclick="closeNav()">Portfolio</a>
-            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">About</a>
             <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
                 onclick="closeNav()">Contact</a>
+            <a href="privacy.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Privacy Policy</a>
         </div>
     </nav>
 
     <!-- Page Content -->
     <div class="w3-main w3-padding-large">
-
         <!-- Menu icon to open sidebar -->
         <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
             onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-        <!-- Header -->
-        <header class="w3-container w3-center" style="padding:200px 16px" id="home">
-            <a href="#project-1" class="w3-left">clicky</a>
-            <a href="#project-2" class="w3-right">clicky</a>
-            <h1 class="w3-jumbo"><b>Maya Park-Weber</b></h1>
-            <p>Web Designer</p>
-            <a href="#project-3" class="w3-left">clicky</a>
-            <a href="#project-4" class="w3-right">clicky</a>
-        </header>
 
         <!-- sticky button -->
         <a href="mailto:mpark-weber@eastsideprep.org">
@@ -55,105 +48,106 @@
             </div>
         </a>
 
+        <!-- Header -->
+        <header class="w3-display-container w3-center bgimg w3-text-white" style="padding:200px 16px; height: 100%;"
+            id="home">
+            <a href="#project-1" class="w3-left ">Project <span class="letter">1</span></a>
+            <a href="#project-2" class="w3-right">Project <span class="letter">2</span></a>
+            <h1 class="w3-jumbo" style="font-family: 'Space Grotesk', sans-serif; font-optical-sizing: auto;">
+                <b>Quality websites and zany
+                    illustration.</b>
+            </h1>
+            <p>Maya PW</p>
+            <a href="#project-3" class="w3-left">Project <span class="letter">3</span></a>
+            <a href="#project-4" class="w3-right">Project <span class="letter">4</span></a>
+        </header>
+
         <!-- Portfolio Section -->
         <div class="w3-padding-32" id="portfolio">
-            <h2 class="w3-text-grey">My Portfolio</h2>
-            <hr class="w3-opacity">
+            <hr style="border-top: 1px solid orange;">
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-optical-sizing: auto;">Selected Work</h2>
+            <br>
 
             <!-- photo grid -->
             <div class="w3-row-padding w3-stretch">
                 <div class="w3-col l6">
                     <div class="w3-col l12" id="slideshow_container_1">
-                        <img class="slideshow_1" src="images/image_001.png" alt="" style="width: 100%;">
-                        <img class="slideshow_1" src="images/image_006.png" alt="" style="width: 100%; display: none;">
-                        <img class="slideshow_1" src="images/image_005.png" alt="" style="width: 100%; display: none;">
+                        <img class="slideshow_1" src="images/book_01.png" alt="" style="width: 100%;">
+                        <img class="slideshow_1" src="images/book_02.png" alt="" style="width: 100%; display: none;">
+                        <img class="slideshow_1" src="images/book_03.png" alt="" style="width: 100%; display: none;">
                     </div>
                 </div>
 
                 <div class=" w3-col l6">
                     <div class="w3-row-padding w3-stretch">
-                        <div class="w3-col l6"><img src="images/image_001.png" alt="" style="width: 100%;"></div>
-                        <div class="w3-col l6"><img src="images/image_001.png" alt="" style="width: 100%;"></div>
+                        <div class="w3-col l6"><img src="images/seattle_01.png" alt="" style="width: 100%;"></div>
+                        <div class="w3-col l6"><img src="images/genius_02.png" alt="" style="width: 100%;"></div>
                     </div>
                     <div class="w3-row-padding w3-stretch">
-                        <div class="w3-col s6"><img src="images/image_001.png" alt="" style="width: 100%;"></div>
-                        <div class="w3-col s6"><img src="images/image_001.png" alt="" style="width: 100%;"></div>
+                        <div class="w3-col s6"><img src="images/art_01.png" alt="" style="width: 100%;"></div>
+                        <div class="w3-col s6"><img src="images/art_02.jpeg" alt="" style="width: 100%;"></div>
                     </div>
                 </div>
             </div>
             <!--second row -->
             <div class="w3-row-padding w3-stretch">
-                <div class="w3-col s3 "><img src="images/image_001.png" alt="" style="width: 100%;"></div>
-                <div class="w3-col s3"><img src="images/image_001.png" alt="" style="width: 100%;"></div>
-                <div class="w3-col s3"><img src="images/image_001.png" alt="" style="width: 100%;"></div>
-                <div class="w3-col s3"><img src="images/image_001.png" alt="" style="width: 100%;"></div>
+                <div class="w3-col s3 "><img src="images/grid_02.png" alt="" style="width: 100%;"></div>
+                <div class="w3-col s3"><img src="images/genius_03.png" alt="" style="width: 100%;"></div>
+                <div class="w3-col s3"><img src="images/genius_01.png" alt="" style="width: 100%;"></div>
+                <div class="w3-col s3"><img src="images/art_04.jpg" alt="" style="width: 100%;"></div>
             </div>
             <!--third row -->
             <div class="w3-row-padding w3-stretch">
                 <div class="w3-col s3">
-                    <img src="images/image_001.png" alt="" style="width: 100%;">
-                    <img src="images/image_001.png" alt="" style="width: 100%;">
+                    <img src="images/art_03.png" alt="" style="width: 100%;">
+                    <img src="images/seattle_02.png" alt="" style="width: 100%;">
                 </div>
                 <div class="w3-col s6" id="slideshow_container_2">
-                    <img class="slideshow_2" src="images/image_001.png" alt="" style="width: 100%;">
-                    <img class="slideshow_2" src="images/image_006.png" alt="" style="width: 100%; display: none;">
-                    <img class="slideshow_2" src="images/image_005.png" alt="" style="width: 100%; display: none;">
+                    <img class="slideshow_2" src="images/pet_01.png" alt="" style="width: 100%;">
+                    <img class="slideshow_2" src="images/pet_02.png" alt="" style="width: 100%; display: none;">
+                    <img class="slideshow_2" src="images/pet_01.png" alt="" style="width: 100%; display: none;">
                 </div>
                 <div class="w3-col s3">
-                    <img src="images/image_001.png" alt="" style="width: 100%;">
-                    <img src="images/image_001.png" alt="" style="width: 100%;">
+                    <img src="images/grid_01.png" alt="" style="width: 100%;">
+                    <img src="images/art_05.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
-
-
         </div>
 
         <!-- project 1 div -->
-        <div id="project-1">
-            <p>roject placeholder</p>
-        </div>
-        <!-- project 2 div -->
-        <div id="project-2">
-            <p>roject placeholder</p>
-        </div>
-        <!-- project 3 div -->
-        <div id="project-3">
-            <p>roject placeholder</p>
-        </div>
-        <!-- project 4 div -->
-        <div id="project-4">
-            <p>roject placeholder</p>
+        <div id="project-1" class="project">
+            <img src="images/book_01.png" class="w3-animate-fading" alt="image" style="width: 50%;">
+            <div class="w3-display-bottommiddle caption w3-center">BookTree Website Redesign<br>2023
+            </div>
         </div>
 
-        <!-- About -->
-        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-            <h2 class="w3-center">About</h2>
-            <hr class="w3-opacity">
-            <p>lorem ipsum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                anim
-                id est laborum consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+        <!-- project 2 div -->
+        <div id="project-2" class="project">
+            <img src="images/pet_01.png" class="w3-animate-fading" alt="image" style="width: 50%;">
+            <div class="w3-display-bottommiddle caption w3-center">Pet Forum Backend<br>2025
+            </div>
+        </div>
+
+        <!-- project 3 div -->
+        <div id="project-3" class="project">
+            <img src="images/genius_01.png" class="w3-animate-fading" alt="image" style="width: 50%;">
+            <div class="w3-display-bottommiddle caption w3-center">Basic Grid<br>2023
+            </div>
+        </div>
+
+        <!-- project 4 div -->
+        <div id="project-4" class="project">
+            <img src="images/seattle_01.png" class="w3-animate-fading" alt="image" style="width: 50%;">
+            <div class="w3-display-bottommiddle caption w3-center">Group Project<br>2023
+            </div>
         </div>
 
         <!-- Contact  -->
         <div class="w3-padding-32 w3-content w3-text-grey w3-center" id="contact" style="margin-bottom:64px">
-            <h2>Feel Free to Contact:</h2>
-            <hr class="w3-opacity">
-
-            <div class="w3-section">
-                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Seattle, US</p>
-                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-            </div>
+            <button onclick="topFunction()" id="topBtn" title="Go to top"> <i class="fa fa-arrow-up"></i></button>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-optical-sizing: auto;"><b>Let's start a
+                    conversation.</b></h2>
+            <hr class="w3-orange">
 
             <p>Send me a message:</p>
             <form action="/action_page.php" target="_blank">
@@ -177,14 +171,16 @@
         <!-- Footer -->
         <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
             <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-pinterest w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
-            <p class="w3-left">Maya Park</p>
-            <p class="w3-right">copyright 2025</p>
+            <i class="fa fa-behance w3-hover-opacity"></i>
+            <p class="w3-left w3-small">Maya Park</p>
+            <p class="w3-right w3-small">Copyright @2025</p>
         </footer>
     </div>
-    <script>
 
+    <script>
+        //navbar animation
         function openNav() {
             document.getElementById("mySidebar").style.width = "60%";
             document.getElementById("mySidebar").style.display = "block";
@@ -193,6 +189,7 @@
         function closeNav() {
             document.getElementById("mySidebar").style.display = "none";
         }
+
         // animate hire button
         const hire_button = document.getElementById('hire_button');
         const hire_button_image = document.getElementById('hire_button_image')
@@ -217,7 +214,7 @@
         });
         animate();
 
-        // animate gallery image 1
+        // animate gallery images
         var myIndex = 0;
         let timeout;
 
@@ -246,9 +243,24 @@
             clearTimeout(timeout);
         }
 
+        // animate button
+        let mybutton = document.getElementById("topBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
 
     </script>
-
 </body>
 
 </html>
